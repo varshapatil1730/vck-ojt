@@ -24,6 +24,8 @@ const Headers = () => {
           <Link to="/courses" className="nav-link">Courses</Link>
           <Link to="/contact" className="nav-link">Contact</Link>
           <Link to="/apply" className="apply-btn">Apply Now!</Link>
+          
+
         </nav>
         
         <button className="hamburger" onClick={toggleMenu}>
@@ -37,6 +39,7 @@ const Headers = () => {
         <Link to="/courses" onClick={closeMenu} className="mobile-link">Courses</Link>
         <Link to="/contact" onClick={closeMenu} className="mobile-link">Contact</Link>
         <Link to="/apply" onClick={closeMenu} className="mobile-apply">Apply Now!</Link>
+        
       </div>
     </header>
   );

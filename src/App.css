@@ -28,12 +28,13 @@ nav a {
 }
 
 .container {
-  max-width: 900px;
+   margin: 0 auto; /* Centers the content */
+  max-width: 900px; /* Adjust as needed */
   background: #e5edee;
-  margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  overflow-x: hidden;
+  text-align: center; /* Centers text inside */
+
 }
 
 .h1 {
@@ -75,21 +76,11 @@ a{
   color:rgb(23, 20, 20);
 }
   
- 
-
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #eaf5f5;
-}
-
-
-nav {
+ nav {
   background: #222;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   padding: 10px 0;
 }
 
@@ -132,7 +123,7 @@ p, li {
 }
 
 .r {
-  text-align:center;
+  text-align:right;
 }
 .note {
       text-align: center;

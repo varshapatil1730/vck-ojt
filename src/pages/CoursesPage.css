@@ -28,7 +28,7 @@ textarea {
 }
 
 .cta-button {
-  background-color: #007bff;
+  background-color:green;
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
@@ -61,11 +61,13 @@ textarea {
 /* html table*/
 .custom-table-style,
 .container {
-  font-family: Arial, sans-serif;
+  font-family: Arial, ;
   padding: 20px;
-  background-color: #f0f0f0; /* Lighter background for contrast */
+  background-color: white; /* Lighter background for contrast */
   color: #000; /* Darker text for readability */
+  text-align: left;
 }
+
 
 .custom-table-style h2,
 .container h2 {
@@ -94,9 +96,9 @@ textarea {
 
 .custom-table-style th,
 .container th {
-  background-color: #666; /* Header background */
-  font-weight: bold;
-  color: #fff; /* White text for contrast */
+  background-color:#e9ecef; /* Header background */
+  font-weight: 700;
+  color: #343a40; /* White text for contrast */
 }
 .form-container {
   width: 550px;
@@ -107,6 +109,7 @@ textarea {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
 
  input {
   width: 75%; /* Adjust width relative to its parent */
@@ -126,4 +129,17 @@ textarea {
   font-size: 16px;
   resize: none; /* Prevents resizing */
   margin: 0 auto;
+}
+#demo{
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+#poi{
+  text-align: left;
+}
+
+#oil{
+  text-align:left;
 }

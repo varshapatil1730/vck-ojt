@@ -1,29 +1,23 @@
 .home-scroll-container {
           
-  overflow-y: auto;
-  overflow-x: visible;
-  padding: 2rem;
-  width: 100%;
-  height: 541px;
-  border: 1px solid #000;
- justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
-  border: 1px solid #ddd;
+   max-width: 960px;
+  /* Max width for content to prevent it from stretching too wide */
+  height: 500px;
+  margin: 20px auto;
+  /* Center the content with some top/bottom margin */
+  padding: 20px;
+  background-color: #FFFFFF;
+  /* White background for page content */
   border-radius: 8px;
-  background-color: #e2f1f2;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 2rem auto;
-  font-family: Arial, sans-serif;
-  color: #333;
+  /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  /* Subtle shadow */
 
-  max-width: 1200px;
-  margin: 0 auto;
- 
 }
 
 .flex-row {
   display: flex;
-  flex-wrap:wrap; /* lets items wrap on smaller screens */
+  flex-wrap: wrap; /* lets items wrap on smaller screens */
   gap: 1rem;
 }
 
@@ -33,17 +27,19 @@
 
 
 .home-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #007bff;
-  margin-bottom: 1rem;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  
 }
 
 .home-subtext {
   margin-top: 1rem;
   font-size: 1.1rem;
   font-style: italic;
-  text-align: center; /* ✅ Center alignment */
+  text-align:left ; /* ✅ Center alignment */
+  
 }
 
 
@@ -76,41 +72,42 @@ li {
 }
 
 .banner-container{
-  position: cover;
+  position:relative;
   overflow: hidden;                     /* Important for clipping blur */
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   color: white;
   border-radius: 10px;
-  padding: 6rem 2rem;
+  padding: 2rem;
+  isolation: isolate;
+
 }
 .banner-container::before {
   content: "";
-  position: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+ 
   background-image: url('/Images/college-banner-.png');
   background-size: 1000px 400px;
   background-position: center;
-  filter: blur(2px);                    /* 👈 Slight blur */
+  filter: brightness(60%);                    /* 👈 Slight blur */
   transform: scale(1.1);               /* Prevent edges from showing due to blur */
-  z-index: 0;
+  z-index: -1;
 
   background-repeat: no-repeat;
   padding: 6rem 2rem;
   text-align: center;
-  color: rgb(43, 39, 164);
+  color: #fff;
   margin-bottom: 2rem;
   border-radius: 10px;
-  height: 40vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: 35%;
+  object-fit: fill;
 }
 .banner-container * {
   position: relative;
@@ -118,11 +115,13 @@ li {
 }
 
 .banner-container h1 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
+
+
 
 .banner-container p {
   font-size: 1.3rem;
@@ -130,7 +129,8 @@ li {
 }
 
 .cta-button {
-  margin-top: 1.5rem;
+  margin-top: 0.6rem;
+  
 }
 
 .image-gallery {
@@ -158,6 +158,42 @@ li {
   height: 235px;         /* Increase to your desired height */
   object-fit: cover;  
 }
-.button-wrapper {
+.button-wrapper .cta-button {
   text-align: center;
+  background-color: #28a745;
+  color:rgb(55, 51, 51);
+  text-decoration: underline;
+}
+#pqr{
+  justify-content: center;
+  text-align: center;
+   margin: 0 auto;
+}
+h1{
+
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+  
+}
+
+.cta-button-e{
+  text-align: center;
+  background-color: #28a745;
+  color: #ddd;
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;       /* Smaller padding */
+  font-size: 1rem;            /* Smaller text */
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+
+}
+
+#poi{
+  text-align: left;
 }

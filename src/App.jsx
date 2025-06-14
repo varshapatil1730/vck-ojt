@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
@@ -11,18 +11,29 @@ import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
 
 import NotFoundPage from './pages/NotFoundPage';
-
-// Header
-import Header from './components/Header/Headers';
-//Footer
-import Footer from "./components/Footer/Footers";
-
+import ChatbotComponent from './components/Chatbot/ChatbotComponents';
+import DeveloperInfoPopup from './components/DeveloperInfo/DeveloperInfoPopup';
 
 function App() {
+  const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
+    <> 
+    <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Varsha Ramgonda Patil"
+          studentPhotoUrl="\Images\varsha.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
     <Router>
-      <Header />
-      
+     
+       
       <main style={{ padding: '1rem' }}>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -33,8 +44,11 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      <Footer/>
+     <ChatbotComponent/>
+     
     </Router>
+    </> 
+    
   );
 }
 

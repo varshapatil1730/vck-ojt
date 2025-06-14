@@ -4,50 +4,66 @@ import Footer from "../components/Footer/Footers";
 import './CoursesPage.css'
 const CoursesPage = () => { 
     return(
-  
+  <div id="demo">
+    <Header/>
   <div style={{ padding: '1rem' }} className="home-scroll-container">
    
     <h1 className='h1'>Our Academic Programs</h1>
     <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
-    <h2><strong>Discover Campus Life</strong></h2>
+    <h2 id="poi"><strong>Discover Campus Life</strong></h2>
     <video  width="840" height="360" controls autoPlay src="/Videos/college-tour.mp4" type="video/mp4"> 
     </video>
   <div> 
     <label ><i>Get a glimpse of the vibrant academic and social life at Vivekanand College.</i></label>
   </div>
 
-     <h1>Academic Programs</h1>
-
-    <h2>Undergraduate Programs</h2>
+    
+      <div id="oil">  
+    <h2>Undergraduate Programs(UG)</h2>
     <ul>
-        <li>BSc - Computer Science (3 years)</li>
-        <li>BSc - Information Technology (3 years)</li>
-        <li>BSc - Biotechnology (3 years)</li>
-        <li>BCom - Accounting & Finance (3 years)</li>
-        <li>BCom - Banking & Insurance (3 years)</li>
-        <li>BA - English Literature (3 years)</li>
-        <li>BA - Psychology (3 years)</li>
-    </ul>
-
-    <h2>Postgraduate Programs</h2>
-    <ul>
-        <li>MSc - Computer Science (2 years)</li>
-        <li>MSc - Information Technology (2 years)</li>
-        <li>MCom - Master of Commerce (2 years)</li>
-        <li>MA - Master of Arts (2 years)</li>
-    </ul>
-
-    <h3>Postgraduate Programs (PG)</h3>
-    <ul>
-      <li><strong>Master of Science (M.Sc.)</strong>
-        <ul>
-          <li>Computer Science (2 years)</li>
-          <li>Information Technology (2 years)</li>
-        </ul>
-      </li>
-      <li><strong>Master of Commerce (M.Com)</strong> (2 years)</li>
-      <li><strong>Master of Arts (M.A.)</strong> (2 years)</li>
-    </ul>
+        <li>
+          <b>Bachelor of Science (B.Sc.)</b>
+          <ul>
+            <li>Computer Science (3 years)</li>
+            <li>Information Technology (3 years)</li>
+            <li>Biotechnology (3 years)</li>
+          </ul>
+        </li>
+        <li>
+          <b>Bachelor of Commerce (B.Com)</b>
+          <ul>
+            <li>Accounting & Finance (3 years)</li>
+            <li>Banking & Insurance (3 years)</li>
+          </ul>
+        </li>
+        <li>
+          <b>Bachelor of Arts (B.A.)</b>
+          <ul>
+            <li>English Literature (3 years)</li>
+            <li>Psychology (3 years)</li>
+          </ul>
+        </li>
+        {/* Add more UG courses as applicable */}
+      </ul>
+      <h2>Postgraduate Programs (PG)</h2>
+      <ul>
+        <li>
+          <b>Master of Science (M.Sc.)</b>
+          <ul>
+            <li>Computer Science (2 years)</li>
+            <li>Information Technology (2 years)</li>
+          </ul>
+        </li>
+        <li>
+          <b>Master of Commerce (M.Com)</b> (2 years)
+        </li>
+        <li>
+          <b>Master of Arts (M.A.)</b> (2 years)
+        </li>
+        {/* Add more PG courses as applicable */}
+      </ul>
+   
+</div>
     <div class="container">
     <h2 class="custom-table-style">Program Details & Fee Structure (Annual)</h2>
   <table className="custom-table-style">
@@ -85,16 +101,18 @@ const CoursesPage = () => {
       </tbody>
       </table>
     </div>
-    <h3>Specialized & Vocational Courses</h3>
+    <h2 class="custom-table-style">Specialized & Vocational Courses</h2>
     <p>
       In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.
     </p>
- <h5 class="note">
-      Explore detailed syllabi and admission criteria on our Admissions page.
-    </h5>
+ 
+     <p>Have questions about a specific course?</p>
+   
 
-    <a href='/contact'  class="cta-button">Enquire About Courses</a>
+    <a href='/contact'  class="cta-button">Inquire About Courses</a>
     
+  </div>
+  <Footer/>
   </div>
 
 
